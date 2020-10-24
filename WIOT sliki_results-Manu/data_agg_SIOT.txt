@@ -1,0 +1,118 @@
+Intersection = 
+['Crop and animal production, hunting and related service activities',
+'Forestry and logging',
+'Fishing and aquaculture',
+'Mining and quarrying',
+'Manufacture of food products, beverages and tobacco products',
+'Manufacture of textiles, wearing apparel and leather products',
+'Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials',
+'Manufacture of paper and paper products',
+'Printing and reproduction of recorded media',
+'Manufacture of coke and refined petroleum products',
+'Manufacture of chemicals and chemical products',
+'Manufacture of basic pharmaceutical products and pharmaceutical preparations',
+'Manufacture of rubber and plastic products',
+'Manufacture of other non-metallic mineral products',
+'Manufacture of basic metals',
+'Manufacture of fabricated metal products, except machinery and equipment',
+'Manufacture of computer, electronic and optical products',
+'Manufacture of electrical equipment',
+'Manufacture of machinery and equipment n.e.c.',
+'Manufacture of motor vehicles, trailers and semi-trailers',
+'Manufacture of other transport equipment',
+'Manufacture of furniture; other manufacturing',
+'Repair and installation of machinery and equipment',
+'Electricity, gas, steam and air conditioning supply',
+'Water collection, treatment and supply',
+'Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services',
+'Construction',
+'Wholesale trade, except of motor vehicles and motorcycles',
+'Retail trade, except of motor vehicles and motorcycles',
+'Land transport and transport via pipelines',
+'Water transport',
+'Air transport',
+'Warehousing and support activities for transportation',
+'Postal and courier activities',
+'Accommodation and food service activities',
+'Publishing activities',
+'Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities',
+'Telecommunications',
+'Computer programming, consultancy and related activities; information service activities',
+'Financial service activities, except insurance and pension funding',
+'Insurance, reinsurance and pension funding, except compulsory social security',
+'Activities auxiliary to financial services and insurance activities',
+'Legal and accounting activities; activities of head offices; management consultancy activities',
+'Architectural and engineering activities; technical testing and analysis',
+'Scientific research and development',
+'Advertising and market research',
+'Other professional, scientific and technical activities; veterinary activities',
+'Public administration and defence; compulsory social security',
+'Education',
+'Human health and social work activities',
+'Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use',
+'Wholesale and retail trade and repair of motor vehicles and motorcycles',
+'Changes in inventories and valuables',
+'Final consumption expenditure by households',
+'Final consumption expenditure by non-profit organisations serving households (NPISH)',
+'Final consumption expenditure by government',
+'Gross fixed capital formation']
+
+- Above columns are columns which are present in the total intersection between siot for year 2015,2010 and every wiot. 2005 is left out since many of the column names
+are different than the 2010 and 2015 tables, hence domain knowledge is required to find the intersection.
+
+Notes:
+1. Human health and social work activities -> split into two sectors in siot: Human health activities i Social work activities
+2. Electricity, gas, steam and air conditioning supply -> named Electricity, gas, steam and air-conditioning supply in siot
+3. Wholesale and retail trade and repair of motor vehicles and motorcycles -> named Wholesale and retail trade and repair services of motor vehicles and motorcycles in siot
+4. Changes in inventories and valuables -> named Changes in inventories in siot
+
+
+Problems: 
+
+1. Real estate activities (in wiot) -> probably split into 3 sectors in siot : Real estate activities (excluding imputed rent), Imputed rents of owner-occupied dwellings,
+and maybe Rental and leasing activities ? Should be checked
+
+Problem wiot (not included): 
+ 
+['Activities of extraterritorial organizations and bodies', -> Activities of membership organizations(SIOT) 90%
+'Administrative and support service activities', -> 'Security and investigation activities; services to buildings and landscape activities; office administrative, office support and other business support activities'(SIOT)
+'Other service activities', ->'Other personal service activities', 
+'Real estate activities' -> najverojatno tocna e segregacijata 90%], procentualno da se proveri od x za proverka (ili od beta)
+
+Above columns are columns present in wiot which aren't present in any of the siots but are presumed that they represent some kind of aggregation of the below columns
+
+Problem siot (not included):  
+
+['Activities of membership organisations', 
+'Creative, arts and entertainment activities; libraries, archives, museums and other cultural activities; gambling and betting activities', 
+'Employment activities', 
+'Exports FOB', 
+'Gross capital formation', 
+'Other personal service activities', 
+'Repair of computers and personal and household goods', 
+'Sports activities and amusement and recreation activities', 
+'Travel agency, tour operator and other reservation services and related activities']
+`
+Problem siot f columns:
+['Total final consumption expenditure at basic prices',
+'Total intermediate consumption at basic prices']
+``
+Above columns are columns present in the intersection of the 2015 siot and 2010 siot which are not present in the wiot and hence not included in the total intersection but
+are presumed to be some kind of segregations of the wiot not included columns
+
+ALL siot columns: 
+
+2015 siot cols:
+['Accommodation and food service activities', 'Activities auxiliary to financial services and insurance activities', 'Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use', 'Activities of membership organisations', 'Advertising and market research', 'Air transport', 'Architectural and engineering activities; technical testing and analysis', 'Changes in inventories', 'Computer programming, consultancy and related activities; information service activities', 'Construction', 'Creative, arts and entertainment activities; libraries, archives, museums and other cultural activities; gambling and betting activities', 'Crop and animal production, hunting and related service activities', 'Education', 'Electricity, gas, steam and air-conditioning supply', 'Employment activities', 'Exports FOB', 'Final consumption expenditure by government', 'Final consumption expenditure by households', 'Final consumption expenditure by non-profit organisations serving households (NPISH)', 'Financial service activities, except insurance and pension funding', 'Fishing and aquaculture', 'Forestry and logging', 'Gross capital formation', 'Gross fixed capital formation', 'Human health activities', 'Imputed rents of owner-occupied dwellings', 'Insurance, reinsurance and pension funding, except compulsory social security', 'Land transport and transport via pipelines', 'Legal and accounting activities; activities of head offices; management consultancy activities', 'Manufacture of basic metals', 'Manufacture of basic pharmaceutical products and pharmaceutical preparations', 'Manufacture of chemicals and chemical products', 'Manufacture of coke and refined petroleum products', 'Manufacture of computer, electronic and optical products', 'Manufacture of electrical equipment', 'Manufacture of fabricated metal products, except machinery and equipment', 'Manufacture of food products, beverages and tobacco products', 'Manufacture of furniture; other manufacturing', 'Manufacture of machinery and equipment n.e.c.', 'Manufacture of motor vehicles, trailers and semi-trailers', 'Manufacture of other non-metallic mineral products', 'Manufacture of other transport equipment', 'Manufacture of paper and paper products', 'Manufacture of rubber and plastic products', 'Manufacture of textiles, wearing apparel and leather products', 'Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials', 'Mining and quarrying', 'Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities', 'Other personal service activities', 'Other professional, scientific and technical activities; veterinary activities', 'Postal and courier activities', 'Printing and reproduction of recorded media', 'Public administration and defence; compulsory social security', 'Publishing activities', 'Real estate activities (excluding imputed rent)', 'Rental and leasing activities', 'Repair and installation of machinery and equipment', 'Repair of computers and personal and household goods', 'Retail trade, except of motor vehicles and motorcycles', 'Scientific research and development', 'Security and investigation activities; services to buildings and landscape activities; office administrative, office support and other business support activities', 'Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services', 'Social work activities', 'Sports activities and amusement and recreation activities', 'Telecommunications', 'Total final consumption expenditure at basic prices', 'Total final use at basic prices', 'Total intermediate consumption at basic prices', 'Total use at basic prices', 'Travel agency, tour operator and other reservation services and related activities', 'Warehousing and support activities for transportation', 'Water collection, treatment and supply', 'Water transport', 'Wholesale and retail trade and repair services of motor vehicles and motorcycles', 'Wholesale trade, except of motor vehicles and motorcycles']
+
+2010 siot cols:
+- same as 2015 minus ['Total final use at basic prices','Total use at basic prices']
+
+2005 siot cols
+['Air transport services', 'Basic metals', 'Changes in inventories', 'Chemicals, chemical products and man-made fibres', 'Coal and lignite; peat', 'Coke, refined petroleum products and nuclear fuels', 'Collected and purified water, distribution services of water', 'Computer and related services', 'Construction work', 'Crude petroleum and natural gas; services incidental to oil and gas extraction excluding surveying', 'Education services', 'Electrical energy, gas, steam and hot water', 'Electrical machinery and apparatus n.e.c.', 'Exports FOB', 'Fabricated metal products, except machinery and equipment', 'Final consumption expenditure by government', 'Final consumption expenditure by households', 'Final consumption expenditure by non-profit organisations serving households (NPISH)', 'Financial intermediation services indirectly measured (FISIM)', 'Financial intermediation services, except insurance and pension funding services', 'Fish and other fishing products; services incidental of fishing', 'Food products and beverages', 'Furniture; other manufactured goods n.e.c.', 'Gross capital formation', 'Gross fixed capital formation', 'Health and social work services', 'Hotel and restaurant services', 'Insurance and pension funding services, except compulsory social security services', 'Land transport; transport via pipeline services', 'Leather and leather products', 'Machinery and equipment n.e.c', 'Medical, precision and optical instruments, watches and clocks', 'Membership organisation services n.e.c.', 'Metal ores', 'Motor vehicles, trailers and semi-trailers', 'Office machinery and computers', 'Other business services', 'Other mining and quarrying products', 'Other non-metallic mineral products', 'Other services', 'Other transport equipment', 'Post and telecommunication services', 'Printed matter and recorded media', 'Private households with employed persons', 'Products of agriculture, hunting and related services', 'Products of forestry, logging and related services', 'Public administration and defence services; compulsory social security services', 'Pulp, paper and paper products', 'Radio, television and communication equipment and apparatus', 'Real estate services', 'Recreational, cultural and sporting services', 'Renting services of machinery and equipment without operator and of personal and household goods', 'Research and development services', 'Retail  trade services, except of motor vehicles and motorcycles; repair services of personal and household goods', 'Rubber and plastic products', 'Secondary raw materials', 'Services auxiliary to financial intermediation', 'Sewage and refuse disposal services, sanitation and similar services', 'Supporting and auxiliary transport services; travel agency services', 'Textiles', 'Tobacco products', 'Total final consumption expenditure at basic prices', 'Total final uses at basic prices', 'Total intermediate consumption at basic prices', 'Total use at basic prices', 'Trade, maintenance and repair services of motor vehicles and motorcycles; retail sale of automotive fuel', 'Uranium and thorium ores', 'Water transport services', 'Wearing apparel; furs', 'Wholesale trade and commission trade services, except of motor vehicles and motorcycles', 'Wood and products of wood and cork (except furniture); articles of straw and plaiting materials']
+
+ZAKLUCOK ZA KOLONITE:
+kje gi vklucime:
+'Administrative and support service activities', -> 'Security and investigation activities; services to buildings and landscape activities; office administrative, office support and other business support activities'(SIOT)
+'Real estate activities' (in wiot) -> probably split into 3 sectors in siot : Real estate activities (excluding imputed rent), Imputed rents of owner-occupied dwellings,
+and maybe Rental and leasing activities 

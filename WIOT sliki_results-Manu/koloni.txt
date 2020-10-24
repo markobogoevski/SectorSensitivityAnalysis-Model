@@ -1,0 +1,86 @@
+IN SIOT: 
+==========================
+Sector  Дејности на организации врз база на зачленување/ Activities of membership organisations 's statistics(SIOT) are: 
+count    2.000000
+mean     0.388152
+std      0.014503
+min      0.377897
+25%      0.383025
+50%      0.388152
+75%      0.393280
+max      0.398408
+dtype: float64
+Sector  Заштитни и истражни дејности; услуги за одржување на згради и дејности за уредување и одржување на животната средина; канцелариско-административни и помошни и деловно-помошни дејности/ Security and investigation activities; services to buildings and landscape activities; office administrative, office support and other business support activities 's statistics(SIOT) are: 
+count    2.000000
+mean     0.365464
+std      0.141494
+min      0.265413
+25%      0.315438
+50%      0.365464
+75%      0.415489
+max      0.465515
+dtype: float64
+Sector  Други лични услужни дејности/ Other personal service activities 's statistics(SIOT) are: 
+count    2.000000
+mean     0.249617
+std      0.229802
+min      0.087123
+25%      0.168370
+50%      0.249617
+75%      0.330864
+max      0.412112
+dtype: float64
+Sector  Real estate aggregated 's statistics(SIOT) are: 
+count    2.000000
+mean     5.771087
+std      1.003589
+min      5.061442
+25%      5.416265
+50%      5.771087
+75%      6.125910
+max      6.480732
+dtype: float64
+==========================
+IN WIOT: 
+==========================
+Sector  Administrative and support service activities 's statistics(WIOT) are: 
+count    660.000000
+mean       2.783134
+std        2.011532
+min        0.027053
+25%        1.717469
+50%        2.575219
+75%        3.331265
+max       13.610011
+dtype: float64
+Sector  Other service activities 's statistics(WIOT) are: 
+count    660.000000
+mean       2.563034
+std        0.634427
+min        0.840249
+25%        2.147189
+50%        2.599886
+75%        3.008160
+max        4.303312
+dtype: float64
+Sector  Real estate activities 's statistics(WIOT) are: 
+count    645.000000
+mean       6.981852
+std        2.104041
+min        1.945133
+25%        5.595286
+50%        7.259195
+75%        8.497838
+max       12.796718
+dtype: float64
+Sector  Activities of extraterritorial organizations and bodies 's statistics(WIOT) are: 
+count    30.000000
+mean      0.002962
+std       0.003024
+min       0.000151
+25%       0.000574
+50%       0.002163
+75%       0.003531
+max       0.011911
+dtype: float64
+==========================
